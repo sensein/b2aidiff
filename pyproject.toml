@@ -1,0 +1,4 @@
+[tool.ruff]
+line-length = 88  # Set to match your preferred line length
+target-version = "py310"  # Adjust to your Python version
+select = ["E", "F"]  # Example: Select specific error codes
