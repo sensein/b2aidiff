@@ -57,7 +57,8 @@ def prompt_llm(prompt):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Passing in 2 versions of the protocol")
+    parser = argparse.ArgumentParser(description="Passing in 2 versions of the \
+                                     protocol")
    
     # Add arguments for the folder paths
     parser.add_argument("new_protocol", type=str, help="Path to the first folder")
@@ -78,13 +79,19 @@ if __name__ == '__main__':
         i = questionnaire.replace("/", "-")
         with open('diff.html', 'a') as file:
             if questionnaire in redcap_protocol:
-                diff = (get_diff(mood_protocol[questionnaire], redcap_protocol[questionnaire]))
+                diff = (get_diff(mood_protocol[questionnaire],
+                                 redcap_protocol[questionnaire]))
                 if diff != {}:
-                    output = prompt_llm(f"give me a human readable version of the following deepdiff, list all changes: {diff} in the following format, Added: , Changed, Removed.")
-                    file.write(f"<div>  <a href='./individual-file-diffs/{i}.html'> <h3>{questionnaire}</h3> </a>")
+                    output = prompt_llm(f"give me a human readable version of \
+                                        the following deepdiff, list all \
+                                        changes: {diff} in the following \
+                                        format, Added: , Changed, Removed.")
+                    file.write(f"<div>  <a href='./individual-file-diffs/{i}\
+                               .html'> <h3>{questionnaire}</h3> </a>")
                     file.write(f"<pre>{output}</pre> </div>")
             else:
-                file.write( f"{questionnaire}  is not present in the redcap protocol")
+                file.write( f"{questionnaire}  is not present in the redcap \
+                           protocol")
             
             
             

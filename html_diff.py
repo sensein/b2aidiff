@@ -1,11 +1,11 @@
-from os import getenv
 import os
 from dotenv import load_dotenv
 
 import json
 import argparse
-load_dotenv(".env", override=True)
 import diff_match_patch as dmp_module
+
+load_dotenv(".env", override=True)
 
 def read_files_in_directory(root_folder):
     file_contents = {}
@@ -68,8 +68,9 @@ if __name__ == '__main__':
     for questionnaire in mood_protocol:
         i = questionnaire.replace("/", "-")
         if questionnaire in redcap_protocol:
-            diff = (get_diff(mood_protocol[questionnaire], redcap_protocol[questionnaire]))
-            if diff != None:
+            diff = (get_diff(mood_protocol[questionnaire], 
+                             redcap_protocol[questionnaire]))
+            if diff is not None:
                 diff = diff.replace("&para;", "")
                 if diff != "":
                     with open(f"individual-file-diffs/{i}.html", 'w') as file:
