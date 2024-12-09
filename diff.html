@@ -1,0 +1,389 @@
+<p> PHQ-9/PHQ9_schema is not present in the redcap protocol </p><p> PHQ-9/valueConstraints is not present in the redcap protocol </p><p> PHQ-9/items/phq9_total_score is not present in the redcap protocol </p><p> PHQ-9/items/phq9_6 is not present in the redcap protocol </p><p> PHQ-9/items/phq9_9 is not present in the redcap protocol </p><p> PHQ-9/items/phq9_8 is not present in the redcap protocol </p><p> PHQ-9/items/phq9_category is not present in the redcap protocol </p><p> PHQ-9/items/phq9_1 is not present in the redcap protocol </p><p> PHQ-9/items/phq9_7 is not present in the redcap protocol </p><p> PHQ-9/items/phq9_2 is not present in the redcap protocol </p><p> PHQ-9/items/phq9_5 is not present in the redcap protocol </p><p> PHQ-9/items/phq9_10 is not present in the redcap protocol </p><p> PHQ-9/items/phq9_4 is not present in the redcap protocol </p><p> PHQ-9/items/phq9_3 is not present in the redcap protocol </p><p> free_speech/free_speech_schema is not present in the redcap protocol </p><p> free_speech/items/free_speech_3 is not present in the redcap protocol </p><p> free_speech/items/free_speech_2 is not present in the redcap protocol </p><p> free_speech/items/free_speech_1 is not present in the redcap protocol </p><p> loudness/loudness_schema is not present in the redcap protocol </p><p> loudness/items/loudness is not present in the redcap protocol </p><div>  <a href='./individual-file-diffs/q_mood_custom_affect_scale-q_mood_custom_affect_scale_schema.html'> <h3>q_mood_custom_affect_scale/q_mood_custom_affect_scale_schema</h3> </a><pre>Changes:
+Added: 
+- root['@type']
+- root['ui']['allow']
+
+Changed: 
+- root['ui']['order'][0]: {'old_value': 'items/custom_affect_scale_session_id', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/custom_affect_scale_session_id'}
+- root['ui']['order'][1]: {'old_value': 'items/custom_affect_scale_started_at', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/custom_affect_scale_started_at'}
+- root['ui']['order'][2]: {'old_value': 'items/custom_affect_scale_completed_at', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/custom_affect_scale_completed_at'}
+- root['ui']['order'][3]: {'old_value': 'items/custom_affect_scale_duration', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/custom_affect_scale_duration'}
+- root['ui']['order'][4]: {'old_value': 'items/sad_or_down', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/sad_or_down'}
+- root['ui']['order'][5]: {'old_value': 'items/joyful', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/joyful'}
+- root['ui']['order'][6]: {'old_value': 'items/motivated', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/motivated'}
+- root['ui']['order'][7]: {'old_value': 'items/lack_of_pleasure', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/lack_of_pleasure'}
+- root['ui']['order'][8]: {'old_value': 'items/tired', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/tired'}
+- root['ui']['order'][9]: {'old_value': 'items/energetic', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/energetic'}
+- root['ui']['order'][10]: {'old_value': 'items/agitated', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/agitated'}
+- root['ui']['order'][11]: {'old_value': 'items/irritated', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/irritated'}
+- root['ui']['order'][12]: {'old_value': 'items/lonely', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/lonely'}
+- root['ui']['order'][13]: {'old_value': 'items/concentrated', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/concentrated'}
+- root['ui']['order'][14]: {'old_value': 'items/relaxed', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/relaxed'}
+- root['ui']['order'][15]: {'old_value': 'items/worried', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/worried'}
+- root['ui']['order'][16]: {'old_value': 'items/desire_to_escape', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/desire_to_escape'}
+- root['ui']['addProperties'][0]['isAbout']: {'old_value': 'items/custom_affect_scale_session_id', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/custom_affect_scale_session_id'}
+- root['ui']['addProperties'][1]['isAbout']: {'old_value': 'items/custom_affect_scale_started_at', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/custom_affect_scale_started_at'}
+- root['ui']['addProperties'][2]['isAbout']: {'old_value': 'items/custom_affect_scale_completed_at', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/custom_affect_scale_completed_at'}
+- root['ui']['addProperties'][3]['isAbout']: {'old_value': 'items/custom_affect_scale_duration', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/custom_affect_scale_duration'}
+- root['ui']['addProperties'][4]['isAbout']: {'old_value': 'items/sad_or_down', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/sad_or_down'}
+- root['ui']['addProperties'][5]['isAbout']: {'old_value': 'items/joyful', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/joyful'}
+- root['ui']['addProperties'][6]['isAbout']: {'old_value': 'items/motivated', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/motivated'}
+- root['ui']['addProperties'][7]['isAbout']: {'old_value': 'items/lack_of_pleasure', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/lack_of_pleasure'}
+- root['ui']['addProperties'][8]['isAbout']: {'old_value': 'items/tired', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/tired'}
+- root['ui']['addProperties'][9]['isAbout']: {'old_value': 'items/energetic', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/energetic'}
+- root['ui']['addProperties'][10]['isAbout']: {'old_value': 'items/agitated', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/agitated'}
+- root['ui']['addProperties'][11]['isAbout']: {'old_value': 'items/irritated', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/irritated'}
+- root['ui']['addProperties'][12]['isAbout']: {'old_value': 'items/lonely', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/lonely'}
+- root['ui']['addProperties'][13]['isAbout']: {'old_value': 'items/concentrated', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/concentrated'}
+- root['ui']['addProperties'][14]['isAbout']: {'old_value': 'items/relaxed', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/relaxed'}
+- root['ui']['addProperties'][15]['isAbout']: {'old_value': 'items/worried', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/worried'}
+- root['ui']['addProperties'][16]['isAbout']: {'old_value': 'items/desire_to_escape', 'new_value': 'b2ai_redcap2rs_activities:q_mood_custom_affect_scale/items/desire_to_escape'}
+
+Removed:
+- root['category']</pre> </div><p> GAD7/valueConstraints is not present in the redcap protocol </p><p> GAD7/GAD7_schema is not present in the redcap protocol </p><p> GAD7/items/gad7_4 is not present in the redcap protocol </p><p> GAD7/items/gad7_2 is not present in the redcap protocol </p><p> GAD7/items/gad7_7 is not present in the redcap protocol </p><p> GAD7/items/gad7_total_score is not present in the redcap protocol </p><p> GAD7/items/gad7_3 is not present in the redcap protocol </p><p> GAD7/items/gad7_1 is not present in the redcap protocol </p><p> GAD7/items/gad7_5 is not present in the redcap protocol </p><p> GAD7/items/gad7_6 is not present in the redcap protocol </p><p> diadochokinesis/diadochokinesis_schema is not present in the redcap protocol </p><p> diadochokinesis/items/diadochokinesis_ta is not present in the redcap protocol </p><p> diadochokinesis/items/diadochokinesis_ka is not present in the redcap protocol </p><p> diadochokinesis/items/diadochokinesis_pataka is not present in the redcap protocol </p><p> diadochokinesis/items/diadochokinesis_pa is not present in the redcap protocol </p><p> diadochokinesis/items/diadochokinesis_buttercup is not present in the redcap protocol </p><p> maximum_phonation_time/maximum_phonation_time_schema is not present in the redcap protocol </p><p> maximum_phonation_time/items/maximum_phonation_time_1 is not present in the redcap protocol </p><p> maximum_phonation_time/items/maximum_phonation_time_2 is not present in the redcap protocol </p><p> maximum_phonation_time/items/maximum_phonation_time_3 is not present in the redcap protocol </p><div>  <a href='./individual-file-diffs/q_generic_demographics-q_generic_demographics_schema.html'> <h3>q_generic_demographics/q_generic_demographics_schema</h3> </a><pre>Changes:
+Added:
+- root['@type']
+- root['ui']['allow']
+- root['ui']['addProperties'][2]['allow']
+- root['ui']['addProperties'][3]['allow']
+- root['ui']['addProperties'][4]['allow']
+- root['ui']['addProperties'][5]['allow']
+- root['ui']['addProperties'][6]['allow']
+- root['ui']['addProperties'][7]['allow']
+- root['ui']['addProperties'][8]['allow']
+- root['ui']['addProperties'][9]['allow']
+- root['ui']['addProperties'][10]['allow']
+- root['ui']['addProperties'][11]['allow']
+- root['ui']['addProperties'][12]['allow']
+- root['ui']['addProperties'][13]['allow']
+- root['ui']['addProperties'][14]['@type']
+- root['ui']['addProperties'][14]['allow']
+- root['ui']['addProperties'][15]['allow']
+- root['ui']['addProperties'][16]['valueRequired']
+- root['ui']['addProperties'][16]['allow']
+- root['ui']['addProperties'][17]['valueRequired']
+- root['ui']['addProperties'][17]['allow']
+
+Changed:
+- root['ui']['addProperties'][10]['isVis']
+- root['ui']['addProperties'][11]['isVis']
+- root['ui']['addProperties'][13]['isVis']
+- root['ui']['addProperties'][14]['isVis']
+- root['ui']['addProperties'][15]['isVis']
+- root['ui']['addProperties'][16]['isVis']
+- root['ui']['addProperties'][17]['isVis']
+- root['ui']['addProperties'][17]['isVis']
+
+Removed:
+- root['category']
+- root['ui']['addProperties'][8]['valueRequired']
+- root['ui']['addProperties'][12]['valueRequired']</pre> </div><p> q_generic_demographics/activities/required/required_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/sexuality/sexuality_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/sexuality/items/sexual_orientation is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/education/education_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/education/items/edu_level is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/disability/disability_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/disability/items/independent_living is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/disability/items/hearing is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/race/race_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/race/items/race is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/gender/gender_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/gender/items/gender_identity is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/gender/items/specify_gender_identity is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/employment/employment_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/employment/items/employ_status is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/ethnicity/ethnicity_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/address/address_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/address/items/city is not present in the redcap protocol </p><p> q_generic_demographics/activities/required/activities/occupation/occupation_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/completed_by/completed_by_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/completed_by/items/demographics_completed_by is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/optional_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/items/financial_assistance_usa is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/items/assistance_programs_ca is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/items/financial_assistance_ca is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/items/assistance_programs_usa is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/items/household_income_ca is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/items/household_income_usa is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/items/household_composition is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/activities/transportation_mode/transportation_mode_schema is not present in the redcap protocol </p><p> q_generic_demographics/activities/optional/activities/household_composition/household_composition_schema is not present in the redcap protocol </p><div>  <a href='./individual-file-diffs/q_mood_adhd_adult-q_mood_adhd_adult_schema.html'> <h3>q_mood_adhd_adult/q_mood_adhd_adult_schema</h3> </a><pre>Added:
+- root['@type']
+- root['ui']['allow']
+- root['ui']['addProperties'][3]['valueRequired']
+- root['ui']['addProperties'][0]['isAbout']
+- root['ui']['addProperties'][0]['isVis']
+- root['ui']['addProperties'][0]['variableName']
+- root['ui']['addProperties'][1]['isAbout']
+- root['ui']['addProperties'][1]['isVis']
+- root['ui']['addProperties'][1]['variableName']
+- root['ui']['addProperties'][2]['isAbout']
+- root['ui']['addProperties'][2]['isVis']
+- root['ui']['addProperties'][2]['variableName']
+- root['ui']['addProperties'][3]['isAbout']
+- root['ui']['addProperties'][3]['isVis']
+- root['ui']['addProperties'][3]['variableName']
+- root['ui']['addProperties'][4]['isAbout']
+- root['ui']['addProperties'][4]['variableName']
+- root['ui']['addProperties'][5]['isAbout']
+- root['ui']['addProperties'][5]['variableName']
+- root['ui']['addProperties'][6]['isAbout']
+- root['ui']['addProperties'][6]['variableName']
+- root['ui']['addProperties'][7]['isAbout']
+- root['ui']['addProperties'][7]['variableName']
+- root['ui']['addProperties'][8]['isAbout']
+- root['ui']['addProperties'][8]['variableName']
+- root['ui']['addProperties'][9]['isAbout']
+- root['ui']['addProperties'][9]['variableName']
+- root['ui']['addProperties'][10]['isAbout']
+- root['ui']['addProperties'][10]['variableName']
+- root['ui']['addProperties'][11]['isAbout']
+- root['ui']['addProperties'][11]['variableName']
+- root['ui']['addProperties'][12]['isAbout']
+- root['ui']['addProperties'][12]['variableName']
+- root['ui']['addProperties'][13]['isAbout']
+- root['ui']['addProperties'][13]['variableName']
+- root['ui']['addProperties'][14]['isAbout']
+- root['ui']['addProperties'][14]['variableName']
+- root['ui']['addProperties'][15]['isAbout']
+- root['ui']['addProperties'][15]['variableName']
+- root['ui']['addProperties'][16]['isAbout']
+- root['ui']['addProperties'][16]['variableName']
+- root['ui']['addProperties'][17]['isAbout']
+- root['ui']['addProperties'][17]['variableName']
+- root['ui']['addProperties'][18]['isAbout']
+- root['ui']['addProperties'][18]['variableName']
+- root['ui']['addProperties'][18]['valueRequired']
+- root['ui']['addProperties'][19]['isAbout']
+- root['ui']['addProperties'][19]['variableName']
+- root['ui']['addProperties'][19]['valueRequired']
+- root['ui']['addProperties'][20]['isAbout']
+- root['ui']['addProperties'][20]['variableName']
+- root['ui']['addProperties'][20]['valueRequired']
+- root['ui']['addProperties'][21]['isAbout']
+- root['ui']['addProperties'][21]['variableName']
+- root['ui']['addProperties'][21]['valueRequired']
+
+Changed:
+- root['ui']['order'][0]
+- root['ui']['order'][1]
+- root['ui']['order'][2]
+- root['ui']['order'][3]
+- root['ui']['order'][4]
+- root['ui']['order'][5]
+- root['ui']['order'][6]
+- root['ui']['order'][7]
+- root['ui']['order'][8]
+- root['ui']['order'][9]
+- root['ui']['order'][10]
+- root['ui']['order'][11]
+- root['ui']['order'][12]
+- root['ui']['order'][13]
+- root['ui']['order'][14]
+- root['ui']['order'][15]
+- root['ui']['order'][16]
+- root['ui']['order'][17]
+
+Removed:
+- root['category']
+- root['ui']['order'][18]
+- root['ui']['order'][19]
+- root['ui']['order'][20]
+- root['ui']['order'][21']</pre> </div><div>  <a href='./individual-file-diffs/q_generic_confounders-q_generic_confounders_schema.html'> <h3>q_generic_confounders/q_generic_confounders_schema</h3> </a><pre>None</pre> </div><p> q_generic_confounders/custom_items/ent_introduction is not present in the redcap protocol </p><p> q_generic_confounders/custom_items/introduction is not present in the redcap protocol </p><div>  <a href='./individual-file-diffs/q_mood_participant_history-q_mood_participant_history_schema.html'> <h3>q_mood_participant_history/q_mood_participant_history_schema</h3> </a><pre>Changes: 
+
+Values Changed:
+- root['ui']['addProperties'][0]['isAbout']: 'items/mph_active_psy_medical_problems' (old) -> 'items/mph_session_id' (new)
+- root['ui']['addProperties'][0]['variableName']: 'mph_active_psy_medical_problems' (old) -> 'mph_session_id' (new)
+- root['ui']['addProperties'][1]['isAbout']: 'items/mph_hist_psy_medical_problems' (old) -> 'items/mph_started_at' (new)
+- root['ui']['addProperties'][1]['variableName']: 'mph_hist_psy_medical_problems' (old) -> 'mph_started_at' (new)
+- root['ui']['addProperties'][2]['isAbout']: 'items/mph_prescribed_medication' (old) -> 'items/mph_completed_at' (new)
+- root['ui']['addProperties'][2]['variableName']: 'mph_prescribed_medication' (old) -> 'mph_completed_at' (new)
+- root['ui']['addProperties'][3]['isAbout']: 'items/mph_current_medication' (old) -> 'items/mph_duration' (new)
+- root['ui']['addProperties'][3]['variableName']: 'mph_current_medication' (old) -> 'mph_duration' (new)
+- root['ui']['addProperties'][4]['isAbout']: 'items/mph_previous_medication' (old) -> 'items/mph_active_psy_medical_problems' (new)
+- root['ui']['addProperties'][4]['variableName']: 'mph_previous_medication' (old) -> 'mph_active_psy_medical_problems' (new)
+- root['ui']['addProperties'][5]['isAbout']: 'items/mph_see_mental_health_professional' (old) -> 'items/mph_hist_psy_medical_problems' (new)
+- root['ui']['addProperties'][5]['variableName']: 'mph_see_mental_health_professional' (old) -> 'mph_hist_psy_medical_problems' (new)
+- root['ui']['addProperties'][6]['isAbout']: 'items/mph_describe_psychotherapy' (old) -> 'items/mph_prescribed_medication' (new)
+- root['ui']['addProperties'][6]['variableName']: 'mph_describe_psychotherapy' (old) -> 'mph_prescribed_medication' (new)
+
+Type Changes:
+- root['ui']['addProperties'][3]['isVis']: <class 'bool'> (old) -> <class 'str'> (new) ; True (old) -> "mph_prescribed_medication =='yes'" (new)
+- root['ui']['addProperties'][4]['isVis']: <class 'bool'> (old) -> <class 'str'> (new) ; True (old) -> "mph_prescribed_medication =='yes'" (new)
+- root['ui']['addProperties'][6]['isVis']: <class 'bool'> (old) -> <class 'str'> (new) ; True (old) -> "mph_see_mental_health_professional =='yes'" (new)
+
+Dictionary Item Removed:
+- root['ui']['addProperties'][0]['valueRequired']
+- root['ui']['addProperties'][1]['valueRequired']
+- root['ui']['addProperties'][2]['valueRequired']
+
+Iterable Item Removed:
+- root['ui']['order'][0]: 'items/mph_session_id'
+- root['ui']['order'][1]: 'items/mph_started_at'
+- root['ui']['order'][2]: 'items/mph_completed_at'
+- root['ui']['order'][3]: 'items/mph_duration'
+- root['ui']['addProperties'][7]: {'isAbout': 'items/mph_current_medication', 'isVis': "mph_prescribed_medication =='yes'", 'variableName': 'mph_current_medication'}
+- root['ui']['addProperties'][8]: {'isAbout': 'items/mph_previous_medication', 'isVis': "mph_prescribed_medication =='yes'", 'variableName': 'mph_previous_medication'}
+- root['ui']['addProperties'][9]: {'isAbout': 'items/mph_see_mental_health_professional', 'isVis': True, 'variableName': 'mph_see_mental_health_professional'}
+- root['ui']['addProperties'][10]: {'isAbout': 'items/mph_describe_psychotherapy', 'isVis': "mph_see_mental_health_professional =='yes'", 'variableName': 'mph_describe_psychotherapy'}</pre> </div><div>  <a href='./individual-file-diffs/q_mood_participant_history-items-mph_hist_psy_medical_problems.html'> <h3>q_mood_participant_history/items/mph_hist_psy_medical_problems</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_participant_history-items-mph_describe_psychotherapy.html'> <h3>q_mood_participant_history/items/mph_describe_psychotherapy</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_participant_history-items-mph_active_psy_medical_problems.html'> <h3>q_mood_participant_history/items/mph_active_psy_medical_problems</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_participant_history-items-mph_previous_medication.html'> <h3>q_mood_participant_history/items/mph_previous_medication</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_participant_history-items-mph_current_medication.html'> <h3>q_mood_participant_history/items/mph_current_medication</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_participant_history-items-mph_prescribed_medication.html'> <h3>q_mood_participant_history/items/mph_prescribed_medication</h3> </a><pre>Removed:
+- 'additionalNotesObj' dictionary item was removed from the root dictionary.</pre> </div><div>  <a href='./individual-file-diffs/q_mood_participant_history-items-mph_see_mental_health_professional.html'> <h3>q_mood_participant_history/items/mph_see_mental_health_professional</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><p> animal_fluency/animal_fluency_schema is not present in the redcap protocol </p><p> animal_fluency/items/animal_fluency is not present in the redcap protocol </p><div>  <a href='./individual-file-diffs/q_generic_voice_handicap_index_vhi10-q_generic_voice_handicap_index_vhi10_schema.html'> <h3>q_generic_voice_handicap_index_vhi10/q_generic_voice_handicap_index_vhi10_schema</h3> </a><pre>Changes:
+Added: root['@type'], root['ui']['allow']
+Changed: 
+- root['category'] was removed
+- root['ui']['order'][0]: items/vhi_session_id -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_difficult_hear
+- root['ui']['order'][1]: items/vhi_started_at -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/tough_to_understand
+- root['ui']['order'][2]: items/vhi_completed_at -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_restrict_social
+- root['ui']['order'][3]: items/vhi_duration -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/left_out_convo
+- root['ui']['order'][4]: items/voice_difficult_hear -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_lose_income
+- root['ui']['order'][5]: items/tough_to_understand -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/strain_voice
+- root['ui']['order'][6]: items/voice_restrict_social -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_clarity
+- root['ui']['order'][7]: items/left_out_convo -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_upsetting
+- root['ui']['order'][8]: items/voice_lose_income -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_handicapped
+- root['ui']['order'][9]: items/strain_voice -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/ask_whats_wrong_voice
+- root['ui']['addProperties'][0]['isAbout']: items/vhi_session_id -> vhi_session_id
+- root['ui']['addProperties'][1]['isAbout']: items/vhi_started_at -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/vhi_started_at
+- root['ui']['addProperties'][2]['isAbout']: items/vhi_completed_at -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/vhi_completed_at
+- root['ui']['addProperties'][3]['isAbout']: items/vhi_duration -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/vhi_duration
+- root['ui']['addProperties'][4]['isAbout']: items/voice_difficult_hear -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_difficult_hear
+- root['ui']['addProperties'][5]['isAbout']: items/tough_to_understand -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/tough_to_understand
+- root['ui']['addProperties'][6]['isAbout']: items/voice_restrict_social -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_restrict_social
+- root['ui']['addProperties'][7]['isAbout']: items/left_out_convo -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/left_out_convo
+- root['ui']['addProperties'][8]['isAbout']: items/voice_lose_income -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_lose_income
+- root['ui']['addProperties'][9]['isAbout']: items/strain_voice -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/strain_voice
+- root['ui']['addProperties'][10]['isAbout']: items/voice_clarity -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_clarity
+- root['ui']['addProperties'][11]['isAbout']: items/voice_upsetting -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_upsetting
+- root['ui']['addProperties'][12]['isAbout']: items/voice_handicapped -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/voice_handicapped
+- root['ui']['addProperties'][13]['isAbout']: items/ask_whats_wrong_voice -> b2ai_redcap2rs_activities:q_generic_voice_handicap_index_vhi10/items/ask_whats_wrong_voice
+Removed: 
+- root['ui']['order'][10]: items/voice_clarity
+- root['ui']['order'][11]: items/voice_upsetting
+- root['ui']['order'][12]: items/voice_handicapped
+- root['ui']['order'][13]: items/ask_whats_wrong_voice</pre> </div><p> story_recall/story_recall_schema is not present in the redcap protocol </p><p> story_recall/items/story_recall is not present in the redcap protocol </p><p> story_recall/items/continue is not present in the redcap protocol </p><p> story_recall/items/passage is not present in the redcap protocol </p><p> audio_check/audio_check_schema is not present in the redcap protocol </p><p> audio_check/items/check_1 is not present in the redcap protocol </p><p> audio_check/items/check_2 is not present in the redcap protocol </p><p> audio_check/items/cough is not present in the redcap protocol </p><p> audio_check/items/breathing is not present in the redcap protocol </p><div>  <a href='./individual-file-diffs/q_mood_panas-q_mood_panas_schema.html'> <h3>q_mood_panas/q_mood_panas_schema</h3> </a><pre>Changes:
+- Added: 
+  - root['@type']
+  - root['ui']['allow']
+
+- Changed: 
+  - root['ui']['order'][0]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/upset', 'old_value': 'items/panas_session_id'}
+  - root['ui']['order'][1]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/hostile', 'old_value': 'items/panas_started_at'}
+  - root['ui']['order'][2]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/alert', 'old_value': 'items/panas_completed_at'}
+  - root['ui']['order'][3]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/ashamed', 'old_value': 'items/panas_duration'}
+  - root['ui']['order'][4]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/inspired', 'old_value': 'items/upset'}
+  - root['ui']['order'][5]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/nervous', 'old_value': 'items/hostile'}
+  - root['ui']['order'][6]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/determined', 'old_value': 'items/alert'}
+  - root['ui']['order'][7]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/attentive', 'old_value': 'items/ashamed'}
+  - root['ui']['order'][8]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/afraid', 'old_value': 'items/inspired'}
+  - root['ui']['order'][9]: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/active', 'old_value': 'items/nervous'}
+  - root['ui']['addProperties'][0]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/panas_session_id', 'old_value': 'items/panas_session_id'}
+  - root['ui']['addProperties'][1]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/panas_started_at', 'old_value': 'items/panas_started_at'}
+  - root['ui']['addProperties'][2]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/panas_completed_at', 'old_value': 'items/panas_completed_at'}
+  - root['ui']['addProperties'][3]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/panas_duration', 'old_value': 'items/panas_duration'}
+  - root['ui']['addProperties'][4]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/upset', 'old_value': 'items/upset'}
+  - root['ui']['addProperties'][5]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/hostile', 'old_value': 'items/hostile'}
+  - root['ui']['addProperties'][6]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/alert', 'old_value': 'items/alert'}
+  - root['ui']['addProperties'][7]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/ashamed', 'old_value': 'items/ashamed'}
+  - root['ui']['addProperties'][8]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/inspired', 'old_value': 'items/inspired'}
+  - root['ui']['addProperties'][9]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/nervous', 'old_value': 'items/nervous'}
+  - root['ui']['addProperties'][10]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/determined', 'old_value': 'items/determined'}
+  - root['ui']['addProperties'][11]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/attentive', 'old_value': 'items/attentive'}
+  - root['ui']['addProperties'][12]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/afraid', 'old_value': 'items/afraid'}
+  - root['ui']['addProperties'][13]['isAbout']: {'new_value': 'b2ai_redcap2rs_activities:q_mood_panas/items/active', 'old_value': 'items/active'}
+
+- Removed:
+  - root['category']
+  - root['ui']['order'][10]: 'items/determined'
+  - root['ui']['order'][11]: 'items/attentive'
+  - root['ui']['order'][12]: 'items/afraid'
+  - root['ui']['order'][13]: 'items/active'</pre> </div><div>  <a href='./individual-file-diffs/q_generic_voice_perception-q_generic_voice_perception_schema.html'> <h3>q_generic_voice_perception/q_generic_voice_perception_schema</h3> </a><pre>Added: 
+- root['@type']
+- root['ui']['allow']
+
+
+Changed: None
+
+Removed:
+- root['category']</pre> </div><div>  <a href='./individual-file-diffs/q_generic_voice_perception-items-voice_perception_duration.html'> <h3>q_generic_voice_perception/items/voice_perception_duration</h3> </a><pre>Added: root['responseOptions']['minValue']
+Removed: root['additionalNotesObj'], root['responseOptions']['maxValue'], root['ui']['readonlyValue']</pre> </div><div>  <a href='./individual-file-diffs/q_generic_voice_perception-items-voice_perception_started_at.html'> <h3>q_generic_voice_perception/items/voice_perception_started_at</h3> </a><pre>Removed: 
+- root['additionalNotesObj']
+- root['ui']['readonlyValue']</pre> </div><div>  <a href='./individual-file-diffs/q_generic_voice_perception-items-voice_quality_perception.html'> <h3>q_generic_voice_perception/items/voice_quality_perception</h3> </a><pre>Changed:
+- root['preamble']['en']: Voice Quality Perception -> Voice Perception
+- root['question']['en']: "How would rate your voice quality today from 1-10?\n1 is the lowest quality and 10 is the best voice quality" -> "How would rate your voice quality today from 1-10? 1 is the lowest quality and 10 is the best voice quality"
+- root['responseOptions']['choices'][0]['name']['en']: 1 -> 1 
+- root['responseOptions']['choices'][1]['name']['en']: 2 -> 2 
+- root['responseOptions']['choices'][2]['name']['en']: 3 -> 3 
+- root['responseOptions']['choices'][3]['name']['en']: 4 -> 4 
+- root['responseOptions']['choices'][4]['name']['en']: 5 -> 5 
+- root['responseOptions']['choices'][5]['name']['en']: 6 -> 6 
+- root['responseOptions']['choices'][6]['name']['en']: 7 -> 7 
+- root['responseOptions']['choices'][7]['name']['en']: 8 -> 8 
+- root['responseOptions']['choices'][8]['name']['en']: 9 -> 9 
+
+Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_generic_voice_perception-items-voice_perception_session_id.html'> <h3>q_generic_voice_perception/items/voice_perception_session_id</h3> </a><pre>Removed: 
+- root['additionalNotesObj']
+- root['ui']['readonlyValue']</pre> </div><div>  <a href='./individual-file-diffs/q_generic_voice_perception-items-voice_perception_completed_at.html'> <h3>q_generic_voice_perception/items/voice_perception_completed_at</h3> </a><pre>Removed: 
+- root['additionalNotesObj']
+- root['ui']['readonlyValue']</pre> </div><p> open_response_questions/open_response_questions_schema is not present in the redcap protocol </p><p> open_response_questions/items/open_response_questions is not present in the redcap protocol </p><p> respiration_and_cough/respiration_and_cough_schema is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_1 is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_4_second is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_1_second is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_2 is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_5 is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_5_second is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_3_second is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_4 is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_2_second is not present in the redcap protocol </p><p> respiration_and_cough/items/respiration_and_cough_3 is not present in the redcap protocol </p><p> glides/glides_schema is not present in the redcap protocol </p><p> glides/items/glides_2 is not present in the redcap protocol </p><p> glides/items/glides_1 is not present in the redcap protocol </p><p> rainbow_passage/rainbow_passage_schema is not present in the redcap protocol </p><p> rainbow_passage/items/rainbow_passage is not present in the redcap protocol </p><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-q_mood_dsm5_adult_schema.html'> <h3>q_mood_dsm5_adult/q_mood_dsm5_adult_schema</h3> </a><pre>Added: 
+- root['ui']['addProperties'][27]['valueRequired']
+- root['ui']['order'][11]: 'items/suicidal_support_popup'
+- root['ui']['addProperties'][42]: {'isAbout': 'items/social_phobia_10', 'isVis': 'feeling_nervous >= 2 || feeling_panic >= 2 || avoiding_situations >= 2', 'variableName': 'social_phobia_10'}
+
+Changed: 
+- root['ui']['addProperties'][15]['isVis']: {'old_type': <class 'bool'>, 'new_type': <class 'str'>, 'old_value': True, 'new_value': 'self_harm !== 0'}
+- root['ui']['addProperties'][27]['isVis']: {'old_type': <class 'str'>, 'new_type': <class 'bool'>, 'old_value': 'sleeping_less >= 2 || starting_more_projects >= 2', 'new_value': True}
+- Multiple values under 'root['ui']['addProperties']'
+
+Removed: 
+- root['ui']['order'][0]: 'items/dsm_5_session_id'
+- root['ui']['order'][1]: 'items/dsm_5_started_at'
+- root['ui']['order'][2]: 'items/dsm_5_completed_at'
+- root['ui']['order'][3]: 'items/dsm_5_duration'</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-isolated.html'> <h3>q_mood_dsm5_adult/items/isolated</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-q1_happy.html'> <h3>q_mood_dsm5_adult/items/q1_happy</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_10.html'> <h3>q_mood_dsm5_adult/items/social_phobia_10</h3> </a><pre>Removed:
+- The item 'additionalNotesObj' was removed from the root dictionary.</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_7.html'> <h3>q_mood_dsm5_adult/items/social_phobia_7</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_5.html'> <h3>q_mood_dsm5_adult/items/social_phobia_5</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-hearing_things.html'> <h3>q_mood_dsm5_adult/items/hearing_things</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-sleeping_less.html'> <h3>q_mood_dsm5_adult/items/sleeping_less</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-q2_self_confident.html'> <h3>q_mood_dsm5_adult/items/q2_self_confident</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-repeat_acts.html'> <h3>q_mood_dsm5_adult/items/repeat_acts</h3> </a><pre>Removed: 'root['additionalNotesObj']'</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_9.html'> <h3>q_mood_dsm5_adult/items/social_phobia_9</h3> </a><pre>Removed:
+- additionalNotesObj</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-feeling_panic.html'> <h3>q_mood_dsm5_adult/items/feeling_panic</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-dsm_5_started_at.html'> <h3>q_mood_dsm5_adult/items/dsm_5_started_at</h3> </a><pre>Removed:
+- root['additionalNotesObj']
+- root['ui']['readonlyValue']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_4.html'> <h3>q_mood_dsm5_adult/items/social_phobia_4</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_8.html'> <h3>q_mood_dsm5_adult/items/social_phobia_8</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-feeling_more_irritated.html'> <h3>q_mood_dsm5_adult/items/feeling_more_irritated</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-unpleasant_thoughts.html'> <h3>q_mood_dsm5_adult/items/unpleasant_thoughts</h3> </a><pre>Changes:
+Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-feeling_detached.html'> <h3>q_mood_dsm5_adult/items/feeling_detached</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_6.html'> <h3>q_mood_dsm5_adult/items/social_phobia_6</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-smoking_more.html'> <h3>q_mood_dsm5_adult/items/smoking_more</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_3.html'> <h3>q_mood_dsm5_adult/items/social_phobia_3</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-drinking_more.html'> <h3>q_mood_dsm5_adult/items/drinking_more</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-avoiding_situations.html'> <h3>q_mood_dsm5_adult/items/avoiding_situations</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-unexplained_aches.html'> <h3>q_mood_dsm5_adult/items/unexplained_aches</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-little_interest.html'> <h3>q_mood_dsm5_adult/items/little_interest</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-no_purpose.html'> <h3>q_mood_dsm5_adult/items/no_purpose</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-feeling_nervous.html'> <h3>q_mood_dsm5_adult/items/feeling_nervous</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_1.html'> <h3>q_mood_dsm5_adult/items/social_phobia_1</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-q4_talk.html'> <h3>q_mood_dsm5_adult/items/q4_talk</h3> </a><pre>Changes:
+Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-starting_more_projects.html'> <h3>q_mood_dsm5_adult/items/starting_more_projects</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-feeling_down.html'> <h3>q_mood_dsm5_adult/items/feeling_down</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-dsm_5_completed_at.html'> <h3>q_mood_dsm5_adult/items/dsm_5_completed_at</h3> </a><pre>Removed:
+- root['additionalNotesObj']
+- root['ui']['readonlyValue']</pre> </div><p> q_mood_dsm5_adult/items/suicidal_support_popup is not present in the redcap protocol </p><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-someone_hear_thoughts.html'> <h3>q_mood_dsm5_adult/items/someone_hear_thoughts</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-q3_sleep.html'> <h3>q_mood_dsm5_adult/items/q3_sleep</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-dsm_5_duration.html'> <h3>q_mood_dsm5_adult/items/dsm_5_duration</h3> </a><pre>Added: root['responseOptions']['minValue']
+Removed: root['additionalNotesObj'], root['responseOptions']['maxValue'], root['ui']['readonlyValue']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-medication_use.html'> <h3>q_mood_dsm5_adult/items/medication_use</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-dsm_5_session_id.html'> <h3>q_mood_dsm5_adult/items/dsm_5_session_id</h3> </a><pre>Removed: 
+- root['additionalNotesObj']
+- root['ui']['readonlyValue']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-social_phobia_2.html'> <h3>q_mood_dsm5_adult/items/social_phobia_2</h3> </a><pre>Removed:
+- root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-memory_issues.html'> <h3>q_mood_dsm5_adult/items/memory_issues</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-sleep_quality.html'> <h3>q_mood_dsm5_adult/items/sleep_quality</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-illness_not_taken_serious.html'> <h3>q_mood_dsm5_adult/items/illness_not_taken_serious</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-self_harm.html'> <h3>q_mood_dsm5_adult/items/self_harm</h3> </a><pre>Removed: root['additionalNotesObj']</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-q5_active.html'> <h3>q_mood_dsm5_adult/items/q5_active</h3> </a><pre>Removed: additionalNotesObj</pre> </div><p> prolonged_vowel/prolonged_vowel_schema is not present in the redcap protocol </p><p> prolonged_vowel/items/prolonged_vowel is not present in the redcap protocol </p><div>  <a href='./individual-file-diffs/q_mood_ptsd_adult-q_mood_ptsd_adult_schema.html'> <h3>q_mood_ptsd_adult/q_mood_ptsd_adult_schema</h3> </a><pre>Changes:
+Added: 
+- root['ui']['addProperties'][3]['valueRequired']
+- root['ui']['addProperties'][4]['valueRequired']
+- root['ui']['addProperties'][5]['valueRequired']
+
+Removed:
+- root['ui']['addProperties'][0]['valueRequired']
+- root['ui']['addProperties'][1]['valueRequired']
+
+Changed:
+- root['ui']['order'][0]: 'items/ptsd_session_id' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/traumatic_event'
+- root['ui']['order'][1]: 'items/ptsd_started_at' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/traumatic_event_date'
+- root['ui']['order'][2]: 'items/ptsd_completed_at' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/flashbacks'
+- root['ui']['order'][3]: 'items/ptsd_duration' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/emotionally_upset'
+- root['ui']['order'][4]: 'items/traumatic_event' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/avoiding_reminders'
+- root['ui']['order'][5]: 'items/traumatic_event_date' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/thinking_stressful_event'
+- root['ui']['order'][6]: 'items/flashbacks' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/neg_emotional_state'
+- root['ui']['order'][7]: 'items/emotionally_upset' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/losing_interest'
+- root['ui']['order'][8]: 'items/avoiding_reminders' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/super_alert'
+- root['ui']['order'][9]: 'items/thinking_stressful_event' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/feeling_jumpy'
+- root['ui']['order'][10]: 'items/neg_emotional_state' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/irritable'
+- root['ui']['addProperties'][0]['isAbout']: 'items/ptsd_session_id' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/traumatic_event'
+- root['ui']['addProperties'][0]['isVis']: False changed to True
+- root['ui']['addProperties'][0]['variableName']: 'ptsd_session_id' changed to 'traumatic_event'
+- root['ui']['addProperties'][1]['isAbout']: 'items/ptsd_started_at' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/traumatic_event_date'
+- root['ui']['addProperties'][1]['isVis']: False changed to True
+- root['ui']['addProperties'][1]['variableName']: 'ptsd_started_at' changed to 'traumatic_event_date'
+- root['ui']['addProperties'][2]['isAbout']: 'items/ptsd_completed_at' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/flashbacks'
+- root['ui']['addProperties'][2]['isVis']: False changed to True
+- root['ui']['addProperties'][2]['variableName']: 'ptsd_completed_at' changed to 'flashbacks'
+- root['ui']['addProperties'][3]['isAbout']: 'items/ptsd_duration' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/emotionally_upset'
+- root['ui']['addProperties'][3]['isVis']: False changed to True
+- root['ui']['addProperties'][3]['variableName']: 'ptsd_duration' changed to 'emotionally_upset'
+- root['ui']['addProperties'][4]['isAbout']: 'items/traumatic_event' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/avoiding_reminders'
+- root['ui']['addProperties'][4]['variableName']: 'traumatic_event' changed to 'avoiding_reminders'
+- root['ui']['addProperties'][5]['isAbout']: 'items/traumatic_event_date' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/thinking_stressful_event'
+- root['ui']['addProperties'][5]['variableName']: 'traumatic_event_date' changed to 'thinking_stressful_event'
+- root['ui']['addProperties'][6]['isAbout']: 'items/flashbacks' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/neg_emotional_state'
+- root['ui']['addProperties'][6]['variableName']: 'flashbacks' changed to 'neg_emotional_state'
+- root['ui']['addProperties'][7]['isAbout']: 'items/emotionally_upset' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/losing_interest'
+- root['ui']['addProperties'][7]['variableName']: 'emotionally_upset' changed to 'losing_interest'
+- root['ui']['addProperties'][8]['isAbout']: 'items/avoiding_reminders' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/super_alert'
+- root['ui']['addProperties'][8]['variableName']: 'avoiding_reminders' changed to 'super_alert'
+- root['ui']['addProperties'][9]['isAbout']: 'items/thinking_stressful_event' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/feeling_jumpy'
+- root['ui']['addProperties'][9]['variableName']: 'thinking_stressful_event' changed to 'feeling_jumpy'
+- root['ui']['addProperties'][10]['isAbout']: 'items/neg_emotional_state' changed to 'b2ai_redcap2rs_activities:q_mood_ptsd_adult/items/irritable'
+- root['ui']['addProperties'][10]['variableName']: 'neg_emotional_state' changed to 'irritable'
+
+Iterable item removed:
+- root['ui']['order'][11]: 'items/losing_interest'
+- root['ui']['order'][12]: 'items/super_alert'
+- root['ui']['order'][13]: 'items/feeling_jumpy'
+- root['ui']['order'][14]: 'items/irritable'
+- root['ui']['addProperties'][11]: 'isAbout': 'items/losing_interest', 'isVis': True, 'valueRequired': True, 'variableName': 'losing_interest'
+- root['ui']['addProperties'][12]: 'isAbout': 'items/super_alert', 'isVis': True, 'valueRequired': True, 'variableName': 'super_alert'
+- root['ui']['addProperties'][13]: 'isAbout': 'items/feeling_jumpy', 'isVis': True, 'valueRequired': True, 'variableName': 'feeling_jumpy'
+- root['ui']['addProperties'][14]: 'isAbout': 'items/irritable', 'isVis': True, 'valueRequired': True, 'variableName': 'irritable'</pre> </div>
