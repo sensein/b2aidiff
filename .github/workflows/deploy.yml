@@ -55,6 +55,7 @@ jobs:
           mkdir mood_protocol
           cp -r b2aiprotocol/mood/ ./mood_protocol
           cp -r b2aiprotocol/generic/ ./mood_protocol
+          ls ./mood_protocol
           rm -r ./mood_protocol/picture_description/
 
       - name: Get GED7 and PHQ-9
