@@ -47,14 +47,14 @@ jobs:
         run: |
           git clone --depth 1 https://${{ secrets.AUTH }}@github.com/sensein/b2ai-redcap2rs
           mkdir redcap_protocol
-          cp -r b2ai-redcap2rs/activities/ ./redcap_protocol
+          cp -r b2ai-redcap2rs/activities/* ./redcap_protocol
       
       - name: Get mood protocol
         run: |
           git clone --depth 1 https://${{ secrets.AUTH }}@github.com/sensein/b2aiprotocol 
           mkdir mood_protocol
-          cp -r b2aiprotocol/mood/ ./mood_protocol
-          cp -r b2aiprotocol/generic/ ./mood_protocol
+          cp -r b2aiprotocol/mood/* ./mood_protocol
+          cp -r b2aiprotocol/generic/* ./mood_protocol
           ls ./mood_protocol
           rm -r ./mood_protocol/picture_description/
 
