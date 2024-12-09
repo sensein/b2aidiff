@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from deepdiff import DeepDiff
 import json
 import argparse
+import time
 load_dotenv(".env", override=True)
 
 def read_files_in_directory(root_folder):
@@ -40,6 +41,7 @@ def filter_json(json):
     return filtered_json
 
 def prompt_llm(prompt):
+    
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
         api_key=getenv("OPENROUTER_API_KEY"),
@@ -53,12 +55,13 @@ def prompt_llm(prompt):
             }
         ]
     )
+    if completion.choices is None:
+        return None
     return completion.choices[0].message.content
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Passing in 2 versions of the \
-                                     protocol")
+    parser = argparse.ArgumentParser(description="Passing in 2 versions of the protocol")
    
     # Add arguments for the folder paths
     parser.add_argument("new_protocol", type=str, help="Path to the first folder")
@@ -75,23 +78,25 @@ if __name__ == '__main__':
         value2 = json.loads(redcap_protocol[key2])
         redcap_protocol[key2] = filter_json(value2)
 
+  
     for questionnaire in mood_protocol:
+        
         i = questionnaire.replace("/", "-")
+        count = 0
         with open('diff.html', 'a') as file:
             if questionnaire in redcap_protocol:
-                diff = (get_diff(mood_protocol[questionnaire],
-                                 redcap_protocol[questionnaire]))
+                diff = (get_diff(mood_protocol[questionnaire], redcap_protocol[questionnaire]))
                 if diff != {}:
-                    output = prompt_llm(f"give me a human readable version of \
-                                        the following deepdiff, list all \
-                                        changes: {diff} in the following \
-                                        format, Added: , Changed, Removed.")
-                    file.write(f"<div>  <a href='./individual-file-diffs/{i}\
-                               .html'> <h3>{questionnaire}</h3> </a>")
+                    #time.sleep(10)
+                    output = prompt_llm(f"give me a human readable version of the following deepdiff, list all changes: {diff} in the following format, Added: , Changed, Removed.")
+                    while output is None and count <5:
+                        count += 1
+                        time.sleep(10)
+                        output = prompt_llm(f"give me a human readable version of the following deepdiff, list all changes: {diff} in the following format, Added: , Changed, Removed.")
+                    file.write(f"<div>  <a href='./individual-file-diffs/{i}.html'> <h3>{questionnaire}</h3> </a>")
                     file.write(f"<pre>{output}</pre> </div>")
             else:
-                file.write( f"{questionnaire}  is not present in the redcap \
-                           protocol")
+                file.write( f"<p> {questionnaire} is not present in the redcap protocol </p>")
             
             
             
