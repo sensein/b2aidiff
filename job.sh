@@ -2,9 +2,15 @@
 folder="individual-file-diffs"
 file="diff.html"
 
-rm "$folder"
+if [ -d "/path/to/folder" ]; then
+  rm "$folder"
+fi
+
+if [ -f "/path/to/file" ]; then
+  rm "$file"
+fi
+
 mkdir "$folder"
-rm "$file"
 
 python html_diff.py mood_protocol/ redcap_protocol/
 
