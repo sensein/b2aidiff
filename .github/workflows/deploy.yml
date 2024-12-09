@@ -55,13 +55,11 @@ jobs:
           mkdir mood_protocol
           cp -r b2aiprotocol/mood/* ./mood_protocol
           cp -r b2aiprotocol/generic/* ./mood_protocol
-          ls ./mood_protocol
           rm -r ./mood_protocol/picture_description/
 
-      - name: Get GED7 and PHQ-9
+      - name: Get GAD7 and PHQ-9
         run: |
           git clone --depth 1 https://${{ secrets.AUTH }}@github.com/ReproNim/reproschema-library/
-          mkdir mood_protocol
           cp -r reproschema-library/activities/PHQ-9/ ./mood_protocol
           cp -r reproschema-library/activities/GAD7/ ./mood_protocol
 
