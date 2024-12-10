@@ -2,11 +2,11 @@
 folder="individual-file-diffs"
 file="diff.html"
 
-if [ -d "/path/to/folder" ]; then
-  rm "$folder"
+if [ -d "$folder" ]; then 
+  rm -r "$folder"
 fi
 
-if [ -f "/path/to/file" ]; then
+if [ -f "$file" ]; then
   rm "$file"
 fi
 
