@@ -1,7 +1,17 @@
 #!/bin/bash
+folder="individual-file-diffs"
+file="diff.html"
 
-mkdir individual-file-diffs
+if [ -d "$folder" ]; then 
+  rm -r "$folder"
+fi
 
-python html_diff.py /path/to/mood/protocol /path/to/redcap/protocol
+if [ -f "$file" ]; then
+  rm "$file"
+fi
 
-python version_diff.py /path/to/mood/protocol /path/to/redcap/protocol
+mkdir "$folder"
+
+python html_diff.py mood_protocol/ redcap_protocol/
+
+python version_diff.py mood_protocol/ redcap_protocol/
