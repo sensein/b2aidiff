@@ -130,7 +130,7 @@ if __name__ == '__main__':
         
         i = questionnaire.replace("/", "-")
         count = 0
-        with open('diff.html', 'a') as file:
+        with open('index.html', 'a') as file:
             if questionnaire in redcap_protocol:
                 diff = (get_diff(mood_protocol[questionnaire], redcap_protocol[questionnaire]))
                 questionnaire_file = questionnaire.split("/")[-1]

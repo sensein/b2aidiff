@@ -1,42 +1,36 @@
 <h2>q_generic_voice_handicap_index_vhi10_schema</h2><div>  <a href='./individual-file-diffs/q_generic_voice_handicap_index_vhi10-q_generic_voice_handicap_index_vhi10_schema.html'> <h3>q_generic_voice_handicap_index_vhi10_schema</h3> </a><pre>Order Changed:
-1. 'vhi_session_id'
-2. 'vhi_started_at'
-3. 'vhi_completed_at'
-4. 'vhi_duration'
+1. 'vhi_session_id' has been removed from the question_order
+2. 'vhi_started_at' has been removed from the question_order
+3. 'vhi_completed_at' has been removed from the question_order
+4. 'vhi_duration' has been removed from the question_order
 
 Removed:
-No conditions related to the removed questions were found in the provided diff.</pre> </div><h2>q_mood_panas_schema</h2><div>  <a href='./individual-file-diffs/q_mood_panas-q_mood_panas_schema.html'> <h3>q_mood_panas_schema</h3> </a><pre>Order Changed:
-1. Question order changed: 'panas_session_id' moved from index 0 to index 4
-2. Question order changed: 'panas_started_at' moved from index 1 to index 5
-3. Question order changed: 'panas_completed_at' moved from index 2 to index 6
-4. Question order changed: 'panas_duration' moved from index 3 to index 7
+No conditions are present for the removed questions.</pre> </div><h2>q_mood_panas_schema</h2><div>  <a href='./individual-file-diffs/q_mood_panas-q_mood_panas_schema.html'> <h3>q_mood_panas_schema</h3> </a><pre>Order Changed:
+1. 'panas_session_id' moved from position 0 to be removed.
+2. 'panas_started_at' moved from position 1 to be removed.
+3. 'panas_completed_at' moved from position 2 to be removed.
+4. 'panas_duration' moved from position 3 to be removed.
 
 Removed:
-- Conditions related to the question 'panas_session_id' have been removed.</pre> </div><h2>q_mood_participant_history_schema</h2><div>  <a href='./individual-file-diffs/q_mood_participant_history-q_mood_participant_history_schema.html'> <h3>q_mood_participant_history_schema</h3> </a><pre>Order Changed: 
+- No conditions related to the questions were found in the given diff.</pre> </div><h2>q_mood_participant_history_schema</h2><div>  <a href='./individual-file-diffs/q_mood_participant_history-q_mood_participant_history_schema.html'> <h3>q_mood_participant_history_schema</h3> </a><pre>Order Changed:
 1. mph_session_id removed from question_order
 2. mph_started_at removed from question_order
 3. mph_completed_at removed from question_order
 4. mph_duration removed from question_order
 
-Value Changed:
-- mph_active_psy_medical_problems changed from 'mph_session_id' to 'mph_active_psy_medical_problems'
-- mph_hist_psy_medical_problems changed from 'mph_started_at' to 'mph_hist_psy_medical_problems'
-- mph_prescribed_medication changed from 'mph_completed_at' to 'mph_prescribed_medication'
-- mph_current_medication changed from 'mph_duration' to 'mph_current_medication'
-- mph_previous_medication changed from 'mph_active_psy_medical_problems' to 'mph_previous_medication'
-- mph_see_mental_health_professional changed from 'mph_hist_psy_medical_problems' to 'mph_see_mental_health_professional'
-- mph_describe_psychotherapy changed from 'mph_prescribed_medication' to 'mph_describe_psychotherapy'
+Values Changed:
+- mph_active_psy_medical_problems changed from mph_session_id
+- mph_hist_psy_medical_problems changed from mph_started_at
+- mph_prescribed_medication changed from mph_completed_at
+- mph_current_medication changed from mph_duration
+- mph_previous_medication changed from mph_active_psy_medical_problems
+- mph_see_mental_health_professional changed from mph_hist_psy_medical_problems
+- mph_describe_psychotherapy changed from mph_prescribed_medication
 
 Conditions Changed:
-- mph_prescribed_medication =='yes' condition changed from True to "mph_prescribed_medication =='yes'"
-- mph_prescribed_medication =='yes' condition changed from True to "mph_prescribed_medication =='yes'"
-- mph_see_mental_health_professional =='yes' condition changed from True to "mph_see_mental_health_professional =='yes'"
-
-Removed:
-1. mph_current_medication condition "mph_prescribed_medication =='yes'"
-2. mph_previous_medication condition "mph_prescribed_medication =='yes'"
-3. mph_see_mental_health_professional condition True
-4. mph_describe_psychotherapy condition "mph_see_mental_health_professional =='yes'"</pre> </div><h2>q_generic_demographics_schema</h2><div>  <a href='./individual-file-diffs/q_generic_demographics-q_generic_demographics_schema.html'> <h3>q_generic_demographics_schema</h3> </a><pre>Order Changed:
+- mph_prescribed_medication condition changed from True to "mph_prescribed_medication =='yes'"
+- mph_prescribed_medication condition changed from True to "mph_prescribed_medication =='yes'"
+- mph_see_mental_health_professional condition changed from True to "mph_see_mental_health_professional =='yes'"</pre> </div><h2>q_generic_demographics_schema</h2><div>  <a href='./individual-file-diffs/q_generic_demographics-q_generic_demographics_schema.html'> <h3>q_generic_demographics_schema</h3> </a><pre>Order Changed:
 1. 'demographics_session_id' changed to 'completed_by_schema'
 2. 'demographics_started_at' changed to 'required_schema'
 3. 'demographics_completed_at' changed to 'b2ai_redcap2rs_activities:country'
@@ -88,138 +82,141 @@ Removed:
 35. 'transportation_yn'
 36. 'primary_transportation'
 37. 'other_transportation'</pre> </div><h2>q_mood_dsm5_adult_schema</h2><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-q_mood_dsm5_adult_schema.html'> <h3>q_mood_dsm5_adult_schema</h3> </a><pre>Order Changed:
-1. 'dsm_5_session_id' was removed from the questionnaire.
-2. 'dsm_5_started_at' was removed from the questionnaire.
-3. 'dsm_5_completed_at' was removed from the questionnaire.
-4. 'dsm_5_duration' was removed from the questionnaire.
-5. 'suicidal_support_popup' was added to the questionnaire.
+- 'dsm_5_session_id' moved to position 0 in the question order
+- 'dsm_5_started_at' moved to position 1 in the question order
+- 'dsm_5_completed_at' moved to position 2 in the question order
+- 'dsm_5_duration' moved to position 3 in the question order
+- 'suicidal_support_popup' added to the question order at index 11
 
-Values Changed for the following questions:
-1. The condition for question number 16 changed from 'someone_hear_thoughts' to 'hearing_things'.
-2. The condition for question number 27 changed from 'sleeping_less >= 2 || starting_more_projects >= 2' to True.
-3. The type of condition for question number 15 changed from bool to str, with the value changing from True to 'self_harm !== 0'.
-4. The conditions for questions 0-3 were changed from False to True.</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-dsm_5_duration.html'> <h3>dsm_5_duration</h3> </a><pre>Added: 
-- Question: "minValue"
+Values Changed:
+- 'suicidal_support_popup' condition changed from 'hearing_things' to 'suicidal_support_popup'
+- 'hearing_things' condition changed to 'hearing_things'
+- 'sleep_quality' condition changed to 'sleep_quality'
+- 'memory_issues' condition changed to 'memory_issues'
+- 'unpleasant_thoughts' condition changed to 'unpleasant_thoughts'
+- 'repeat_acts' condition changed to 'repeat_acts'
+- 'feeling_detached' condition changed to 'feeling_detached'
+- 'no_purpose' condition changed to 'no_purpose'
+- 'isolated' condition changed to 'isolated'
+- 'drinking_more' condition changed to 'drinking_more'
+- 'smoking_more' condition changed to 'smoking_more'
+- 'medication_use' condition changed to 'medication_use'
+- 'q1_happy' condition changed to 'q1_happy'
+- 'q2_self_confident' condition changed to 'q2_self_confident'
+- 'q3_sleep' condition changed to 'q3_sleep'
+- 'q4_talk' condition changed to 'q4_talk'
+- 'q5_active' condition changed to 'q5_active'
+- 'social_phobia_1' condition changed from 'feeling_nervous >= 2 || feeling_panic >= 2 || avoiding_situations >= 2' to 'sleeping_less >= 2 || starting_more_projects >= 2'
+
+Conditions Type Changes:
+- Condition type changed from bool to str for 'self_harm !== 0' at index 15
+- Condition type changed from str to bool for 'sleeping_less >= 2 || starting_more_projects >= 2' at index 27.</pre> </div><div>  <a href='./individual-file-diffs/q_mood_dsm5_adult-items-dsm_5_duration.html'> <h3>dsm_5_duration</h3> </a><pre>Added:
+- Question: "What is the minimum value?"
 - ResponseOptions: None
 
-Removed: 
-- Question: "maxValue"
-- ResponseOptions: None</pre> </div><h2>q_mood_ptsd_adult_schema</h2><div>  <a href='./individual-file-diffs/q_mood_ptsd_adult-q_mood_ptsd_adult_schema.html'> <h3>q_mood_ptsd_adult_schema</h3> </a><pre>``` 
-Order Changed:
-1. ptsd_session_id was removed from question_order
-2. ptsd_started_at was removed from question_order
-3. ptsd_completed_at was removed from question_order
-4. ptsd_duration was removed from question_order
-
-Conditions Changed:
-1. Updated conditions for traumatic_event: False -> True
-2. Updated conditions for traumatic_event_date: False -> True
-3. Updated conditions for flashbacks: False -> True
-4. Updated conditions for emotionally_upset: False -> True
-5. Updated conditions for avoiding_reminders: traumatic_event -> True
-6. Updated conditions for thinking_stressful_event: traumatic_event_date -> True
-7. Updated conditions for neg_emotional_state: flashbacks -> True
-8. Updated conditions for losing_interest: emotionally_upset -> True
-9. Updated conditions for super_alert: avoiding_reminders -> True
-10. Updated conditions for feeling_jumpy: thinking_stressful_event -> True
-11. Updated conditions for irritable: neg_emotional_state -> True
+Changed: None
 
 Removed:
-1. losing_interest condition with True value
-2. super_alert condition with True value
-3. feeling_jumpy condition with True value
-4. irritable condition with True value
-```</pre> </div><h2>q_generic_confounders_schema</h2><div>  <a href='./individual-file-diffs/q_generic_confounders-q_generic_confounders_schema.html'> <h3>q_generic_confounders_schema</h3> </a><pre>Order Changed:
-1. 'confounders_started_at' moved to index 1 in question_order
-2. 'confounders_completed_at' moved to index 2 in question_order
-3. 'confounders_duration' moved to index 3 in question_order
-4. 'smoking_entire_life' moved to index 4 in question_order
-5. 'smoking_occurrence' moved to index 5 in question_order
-6. 'smoking_age_regular_cigarette_smoking_age' moved to index 7 in question_order
-7. 'smoking_age_stopped' moved to index 8 in question_order
-8. 'smoking_age_stopped_age' moved to index 9 in question_order
-9. 'smoking_years_cigarettes' moved to index 10 in question_order
-10. 'smoking_years_cigarettes_years' moved to index 11 in question_order
-11. 'smoking_cigarettes_day_current_avg' moved to index 12 in question_order
-12. 'smoking_cigarettes_day_current_avg_number' moved to index 13 in question_order
-13. 'smoking_cigarettes_day_past_avg' moved to index 14 in question_order
-14. 'smoking_cigarettes_day_past_avg_number' moved to index 15 in question_order
-15. 'smoking_marijuana' moved to index 16 in question_order
-16. 'smoking_electronic' moved to index 17 in question_order
-17. 'smoking_electronic_current_occurence' moved to index 18 in question_order
-18. 'other_smoking_specify' moved to index 25 in question_order
-19. 'height' moved to index 56 in question_order
-20. 'respiratory_introduction' moved to index 55 in question_order
-21. 'height' moved to index 56 in question_order
-22. 'weight' moved to index 56 in question_order
-23. 'ent_introduction' added to question_order at index 43
+- Question: "What is the maximum value?"
+- ResponseOptions: None</pre> </div><h2>q_mood_ptsd_adult_schema</h2><div>  <a href='./individual-file-diffs/q_mood_ptsd_adult-q_mood_ptsd_adult_schema.html'> <h3>q_mood_ptsd_adult_schema</h3> </a><pre>Order Changed:
+1. 'ptsd_session_id' moved to 'traumatic_event'
+2. 'ptsd_started_at' moved to 'traumatic_event_date'
+3. 'ptsd_completed_at' moved to 'flashbacks'
+4. 'ptsd_duration' moved to 'emotionally_upset'
+
+Changes Related to Conditions:
+- 'traumatic_event' now has condition True instead of False
+- 'traumatic_event_date' now has condition True instead of False
+- 'flashbacks' now has condition True instead of False
+- 'emotionally_upset' now has condition True instead of False
+- 'avoiding_reminders' now has condition 'traumatic_event' instead of 'ptsd_completed_at'
+- 'thinking_stressful_event' now has condition 'traumatic_event_date' instead of 'ptsd_started_at'
+- 'neg_emotional_state' now has condition 'flashbacks' instead of 'ptsd_completed_at'
+- 'losing_interest' has been removed as a condition
+- 'super_alert' has been removed as a condition
+- 'feeling_jumpy' has been removed as a condition
+- 'irritable' has been removed as a condition</pre> </div><h2>q_generic_confounders_schema</h2><div>  <a href='./individual-file-diffs/q_generic_confounders-q_generic_confounders_schema.html'> <h3>q_generic_confounders_schema</h3> </a><pre>Order Changed:
+- 'confounders_started_at' was removed from question_order
+- 'confounders_completed_at' was removed from question_order
+- 'confounders_duration' was removed from question_order
+- 'smoking_entire_life' was removed from question_order
+- 'smoking_occurrence' was removed from question_order
+- 'smoking_age_regular_cigarette_smoking_age' was removed from question_order
+- 'smoking_age_stopped' was removed from question_order
+- 'smoking_age_stopped_age' was removed from question_order
+- 'smoking_years_cigarettes' was removed from question_order
+- 'smoking_years_cigarettes_years' was removed from question_order
+- 'smoking_cigarettes_day_current_avg' was removed from question_order
+- 'smoking_cigarettes_day_current_avg_number' was removed from question_order
+- 'smoking_cigarettes_day_past_avg' was removed from question_order
+- 'smoking_cigarettes_day_past_avg_number' was removed from question_order
+- 'smoking_marijuana' was removed from question_order
+- 'smoking_electronic' was removed from question_order
+- 'smoking_electronic_current_occurence' was removed from question_order
+- 'other_smoking_specify' was removed from question_order
+- 'height' was removed from question_order
+- 'weight' was removed from question_order
 
 Removed:
-1. 'confounders_session_id'
-2. 'confounders_started_at'
-3. 'confounders_completed_at'
-4. 'confounders_duration'
-5. 'smoking_entire_life'
-6. 'smoking_occurrence'
-7. 'smoking_age_regular_cigarette_smoking_age'
-8. 'smoking_age_stopped'
-9. 'smoking_age_stopped_age'
-10. 'smoking_years_cigarettes'
-11. 'smoking_years_cigarettes_years'
-12. 'smoking_cigarettes_day_current_avg'
-13. 'smoking_cigarettes_day_current_avg_number'
-14. 'smoking_cigarettes_day_past_avg'
-15. 'smoking_cigarettes_day_past_avg_number'
-16. 'smoking_marijuana'
-17. 'smoking_electronic'
-18. 'smoking_electronic_current_occurence'
-19. 'other_smoking_specify'
-20. 'tired_measure'
-21. 'respiratory_conditions'</pre> </div><h2>q_mood_adhd_adult_schema</h2><div>  <a href='./individual-file-diffs/q_mood_adhd_adult-q_mood_adhd_adult_schema.html'> <h3>q_mood_adhd_adult_schema</h3> </a><pre>Order Changed:
-1. 'adhd_session_id' moved to 'wrapping_up'
-2. 'adhd_started_at' moved to 'things_in_order'
-3. 'adhd_completed_at' moved to 'remembering_appt'
-4. 'adhd_duration' moved to 'avoidance'
-5. 'wrapping_up' moved to 'fidget'
-6. 'things_in_order' moved to 'overly_active'
-7. 'remembering_appt' moved to 'careless'
-8. 'avoidance' moved to 'difficulty_attention'
-9. 'fidget' moved to 'difficulty_concentrating'
-10. 'overly_active' moved to 'misplace'
-11. 'careless' moved to 'distracted'
-12. 'difficulty_attention' moved to 'remain_seated'
-13. 'difficulty_concentrating' moved to 'restless'
-14. 'misplace' moved to 'difficulty_unwinding'
-15. 'distracted' moved to 'talking_too_much'
-16. 'remain_seated' moved to 'finish_other_sent'
-17. 'restless' moved to 'difficulty_waiting'
-18. 'difficulty_unwinding' moved to 'interrupt_others'
+- 'physical_health_freq' was removed from conditions
+- 'phys_health_impact' was removed from conditions
+- 'phys_health_limited' was removed from conditions
+- 'medications' was removed from conditions
+- 'hormone_use' was removed from conditions
+- 'pain_medication' was removed from conditions
+- 'menstruate' was removed from conditions
+- 'menstruate_no' was removed from conditions
+- 'other_menstruate_specify' was removed from conditions
+- 'menstrual_cycle_status' was removed from conditions
+- 'voice_activity' was removed from conditions
+- 'other_voice_activity' was removed from conditions
+- 'hours_voice_activity' was removed from conditions
+- 'reading_aloud' was removed from conditions</pre> </div><h2>q_mood_adhd_adult_schema</h2><div>  <a href='./individual-file-diffs/q_mood_adhd_adult-q_mood_adhd_adult_schema.html'> <h3>q_mood_adhd_adult_schema</h3> </a><pre>Order Changed:
+1. Question moved from 'adhd_session_id' to 'wrapping_up'
+2. Question moved from 'adhd_started_at' to 'things_in_order'
+3. Question moved from 'adhd_completed_at' to 'remembering_appt'
+4. Question moved from 'adhd_duration' to 'avoidance'
+5. Question moved from 'wrapping_up' to 'fidget'
+6. Question moved from 'things_in_order' to 'overly_active'
+7. Question moved from 'remembering_appt' to 'careless'
+8. Question moved from 'avoidance' to 'difficulty_attention'
+9. Question moved from 'fidget' to 'difficulty_concentrating'
+10. Question moved from 'overly_active' to 'misplace'
+11. Question moved from 'careless' to 'distracted'
+12. Question moved from 'difficulty_attention' to 'remain_seated'
+13. Question moved from 'difficulty_concentrating' to 'restless'
+14. Question moved from 'misplace' to 'difficulty_unwinding'
+15. Question moved from 'distracted' to 'talking_too_much'
+16. Question moved from 'remain_seated' to 'finish_other_sent'
+17. Question moved from 'restless' to 'difficulty_waiting'
+18. Question moved from 'difficulty_unwinding' to 'interrupt_others'
 
 Removed:
-1. 'adhd_session_id' with condition False
-2. 'adhd_started_at' with condition False
-3. 'adhd_completed_at' with condition False
-4. 'adhd_duration' with condition False
-5. 'talking_too_much' with condition True
-6. 'finish_other_sent' with condition True
-7. 'difficulty_waiting' with condition True
-8. 'interrupt_others' with condition True</pre> </div><h2>voice_quality_perception</h2><div>  <a href='./individual-file-diffs/q_generic_voice_perception-items-voice_quality_perception.html'> <h3>voice_quality_perception</h3> </a><pre>Changed:
-- Question: 
-  - How would rate your voice quality today from 1-10? 1 is the lowest quality and 10 is the best voice quality
+1. 'adhd_session_id'
+2. 'adhd_started_at'
+3. 'adhd_completed_at'
+4. 'adhd_duration'
+5. Condition for 'talking_too_much'
+6. Condition for 'finish_other_sent'
+7. Condition for 'difficulty_waiting'
+8. Condition for 'interrupt_others'</pre> </div><h2>voice_quality_perception</h2><div>  <a href='./individual-file-diffs/q_generic_voice_perception-items-voice_quality_perception.html'> <h3>voice_quality_perception</h3> </a><pre>Changed:
+- How would rate your voice quality today from 1-10? 1 is the lowest quality and 10 is the best voice quality
 
-Response Options:
+ResponseOptions Changed:
 - 1 
-- 2 
-- 3 
-- 4 
-- 5 
-- 6 
-- 7 
-- 8 
-- 9 
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9</pre> </div><div>  <a href='./individual-file-diffs/q_generic_voice_perception-items-voice_perception_duration.html'> <h3>voice_perception_duration</h3> </a><pre>Added: 
+- Question: "What is the minimum value?"
+- Response Options: None
 
-All the response options have been updated to include a space after the number.</pre> </div><div>  <a href='./individual-file-diffs/q_generic_voice_perception-items-voice_perception_duration.html'> <h3>voice_perception_duration</h3> </a><pre>Added: 
-- Minimum value option for a question
+Changed: None
 
-Removed:
-- Maximum value option for a question</pre> </div>
+Removed: 
+- Question: "What is the maximum value?"
+- Response Options: None</pre> </div>
