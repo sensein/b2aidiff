@@ -1,6 +1,6 @@
 #!/bin/bash
 folder="individual-file-diffs"
-file="diff.html"
+file="index.html"
 
 if [ -d "$folder" ]; then 
   rm -r "$folder"
