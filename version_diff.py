@@ -28,14 +28,39 @@ def read_files_in_directory(root_folder):
     
     return file_contents
 
-def get_diff(json1, json2):
-    diff = DeepDiff(json2, json1)
+
+def get_diff(mood, redcap):
+    #diff = DeepDiff(json2, json1)
+    diff ={}
+    if mood["type"] == "Item":
+        if mood["question"] != redcap["question"]:
+            mood_question = mood["question"]
+            redcap_question = redcap["question"]
+            diff["question change"] = f"Question was reworded from '{mood_question}' to '{redcap_question}'"
+        if "choices" in mood["Options"] and "choices" in redcap["Options"] and set(mood["Options"]) != set(redcap["Options"]):
+                choice_diff = set(redcap["Options"]) - set(mood["Options"])
+                choice_diff2 = set(mood["Options"]) - set(redcap["Options"]) 
+                diff["Choice change"] = choice_diff if choice_diff != set() else None
+                diff["Choice Added"] = choice_diff2 if choice_diff2 != set() else None
+    elif mood["type"] == "Activity":
+        if mood["question_order"] != redcap["question_order"]:
+            mood_order = mood["question_order"]
+            redcap_order= redcap["question_order"]
+            delta_order = set(redcap["question_order"]) - set(mood["question_order"])
+            delta_order2 =  set(mood["question_order"]) - set(redcap["question_order"]) 
+            diff["Order Changed"] = f"The order has changed from {mood_order} to {redcap_order}"
+            diff["New Questions"] = delta_order if delta_order != set() else None
+            diff["Removed Questions"] = delta_order2 if delta_order2 != set() else None
+        # if mood["conditions"] != redcap["conditions"]:
+        #     diff["conditions"] = DeepDiff(redcap["conditions"], mood["conditions"])
     return diff
+
 
 def parse_order(order):
     filtered_order = order
     for i in range(len(order)):
         filtered_order[i] = filtered_order[i].split("/")[-1]
+        filtered_order[i] = filtered_order[i].replace("b2ai_redcap2rs_activities:", "")
     return filtered_order
 
 def conditions(properties):
@@ -140,33 +165,18 @@ if __name__ == '__main__':
                     #print(mood_protocol[questionnaire])
                     if "Item" in mood_protocol[questionnaire]["type"]:
                         #time.sleep(10)
-                        output = prompt_llm(f"You are given a diff of 2 different versions of the questionnaire json. \
-                            we only care about the question, and responseOptions if present. give me a human readable \
-                                version of the following diff, list all changes related  question, and \
-                                    responseOptions given {diff}. Please return in the following format, Added: , Changed, \
-                                        Removed. Theses diffs reflect changes to a questionnaire, only summarize how the \
-                                            questionnaire questions has changed.")
+                        output = prompt_llm(f"Given {diff} summarize the question change, and show us the option changes")
                         while output is None and count <5:
                             count += 1
                             time.sleep(10)
-                            output = prompt_llm(f"You are given a diff of 2 different versions of the questionnaire json. \
-                            we only care about the question, and Options if present. give me a human readable \
-                                version of the following diff, list all changes related  question, and \
-                                    responseOptions given {diff}. Please return in the following format, Question Changed: ,Choices Added: ,Choices Changed: \
-                                       Choices RemovedL Theses diffs reflect changes to a questionnaire, only summarize how the \
-                                            questionnaire questions has changed.")
+                            output = prompt_llm(f"Given {diff} summarize the question change, and show us the option changes")
                         if questionnaire_curr != questionnaire_prev:
                             file.write(f"<h2>{questionnaire_file}</h2>")
                             questionnaire_prev = questionnaire_curr
                         file.write(f"<div>  <a href='./individual-file-diffs/{i}.html'> <h3>{questionnaire_file}</h3> </a>")
                         file.write(f"<pre>{output}</pre> </div>")
                     elif  "Activity" in mood_protocol[questionnaire]["type"]:
-                        output = prompt_llm(f"You are given a diff of 2 different versions of the questionnaire json. \
-                            we only care about the question_order and the conditions if present. give me a human readable \
-                                version of the following diff, list all changes related to question_order, and \
-                                    conditions related to the question given {diff}. Please return in the following format,  Order Changed, \
-                                        Removed. Theses diffs reflect changes to a questionnaire, only summarize how the \
-                                            The following isVis changed for the following question.")
+                        output = prompt_llm(f"Given {diff} tell us the order change, new questions, and removed questions")
                         if questionnaire_curr != questionnaire_prev:
                             file.write(f"<h2>{questionnaire_file}</h2>")
                             questionnaire_prev = questionnaire_curr
